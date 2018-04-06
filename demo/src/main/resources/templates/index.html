@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<form method="post" action="${initParam['posturl']}">
+	<input type="hidden" name="upload" value="1" /> <input type="hidden"
+		name="return" value="${initParam['returnurl']}" /> <input
+		type="hidden" name="cmd" value="_cart" /> <input type="hidden"
+		name="business" value="${initParam['business']}" /> <input
+		type="hidden" name="item_name_1" value="Product" />
+	<div class="row">
+		<div class="col-md-6 col-sm-6">
+			<div class="form-group">
+				<label>Enter</label> <input type="text" name="quantity_1"
+					class="form-control" id="coin-id" placeholder="Entercoin">
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-6">
+			<div class="form-group">
+				<label>Rate of Coin:</label> <input type="hidden" name="amount_1"
+					value="15" />
+			</div>
+		</div>
+		<div class="col-md-12 col-sm-12 text-center">
+			<input type="image"
+				src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif">
+		</div>
+	</div>
+</form>
+
+</html>
