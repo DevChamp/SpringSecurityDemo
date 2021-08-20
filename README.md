@@ -1,2 +1,2 @@
 # SpringSecurityDemo
-Spring security demo application.
+Spring security demo application
