@@ -25,4 +25,4 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build with Maven
-      run: mvn clean install SpringSecurityDemo/demo/pom.xml
+      run: mvn clean install --file SpringSecurityDemo/demo/pom.xml
